@@ -9,7 +9,7 @@ plugins {
     application
 }
 
-group = "com.grappim"
+group = "com.grappim.cashier_common"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -31,7 +31,7 @@ fun kotlinStdlib() = kotlin("-stdlib-jdk8")
 
 dependencies {
     implementation(kotlinSerialization())
-    implementation(kotlinStdlib())
+//    implementation(kotlinStdlib())
     testImplementation(kotlin("test"))
 }
 
@@ -40,9 +40,5 @@ tasks.test {
 }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
-}
-
-application {
-    mainClass.set("MainKt")
+    kotlinOptions.jvmTarget = "13"
 }

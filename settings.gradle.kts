@@ -1,7 +1,4 @@
 pluginManagement {
-    plugins {
-
-    }
     resolutionStrategy {
         eachPlugin {
             if (requested.id.id.startsWith("org.jetbrains.kotlin")) {
@@ -15,5 +12,12 @@ pluginManagement {
     }
 }
 
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
 rootProject.name = "cashier-common"
+include(":common_domain")
 

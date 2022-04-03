@@ -1,4 +1,4 @@
-package data_service.serializers
+package com.grappim.common_data.serializer
 
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.PrimitiveKind

@@ -1,6 +1,6 @@
-package data_service.model.feature_toggle
+package com.grappim.common_data.model.feature_toggle
 
-import data_service.serializers.UUIDSerializer
+import com.grappim.common_data.serializer.UUIDSerializer
 import kotlinx.serialization.Serializable
 import java.util.*
 

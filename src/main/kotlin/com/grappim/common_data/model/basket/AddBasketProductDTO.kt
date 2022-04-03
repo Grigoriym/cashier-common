@@ -2,7 +2,7 @@ package com.grappim.common_data.model.basket
 
 import com.grappim.common_data.serializer.BigDecimalSerializer
 import com.grappim.common_data.serializer.UUIDSerializer
-import com.grappim.common_domain.model.ProductUnit
+import com.grappim.common_data.ProductUnitDTO
 import kotlinx.serialization.Serializable
 import java.math.BigDecimal
 import java.util.*
@@ -18,7 +18,7 @@ data class AddBasketProductDTO(
     val merchantId: UUID,
     @Serializable(BigDecimalSerializer::class)
     val amount: BigDecimal,
-    val unit: ProductUnit,
+    val unit: ProductUnitDTO,
     @Serializable(BigDecimalSerializer::class)
     val sellingPrice: BigDecimal
 )

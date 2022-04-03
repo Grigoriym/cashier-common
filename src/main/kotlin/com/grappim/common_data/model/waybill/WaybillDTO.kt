@@ -3,7 +3,7 @@ package com.grappim.common_data.model.waybill
 import com.grappim.common_data.serializer.BigDecimalSerializer
 import com.grappim.common_data.serializer.LocalDateTimeSerializer
 import com.grappim.common_data.serializer.UUIDSerializer
-import com.grappim.common_domain.model.WaybillStatus
+import com.grappim.common_data.WaybillStatusDTO
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import java.math.BigDecimal
@@ -32,7 +32,7 @@ data class WaybillDTO(
     @Serializable(BigDecimalSerializer::class)
     val totalCost: BigDecimal,
     @SerialName("status")
-    val status: WaybillStatus,
+    val status: WaybillStatusDTO,
     @SerialName("comment")
     val comment: String,
     @SerialName("reservedTime")

@@ -33,7 +33,6 @@ fun kotlinStdlib() = kotlin("-stdlib-jdk8")
 dependencies {
     implementation(kotlinSerialization())
     implementation(kotlinStdlib())
-    implementation(project(":cashier-common-domain"))
     testImplementation(kotlin("test"))
 }
 

@@ -3,7 +3,7 @@ package com.grappim.common_data.model.products
 import com.grappim.common_data.serializer.BigDecimalSerializer
 import com.grappim.common_data.serializer.LocalDateTimeSerializer
 import com.grappim.common_data.serializer.UUIDSerializer
-import com.grappim.common_domain.model.ProductUnit
+import com.grappim.common_data.ProductUnitDTO
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import java.math.BigDecimal
@@ -19,7 +19,7 @@ data class ProductDTO(
     val stockId: UUID,
     @Serializable(with = BigDecimalSerializer::class)
     val amount: BigDecimal,
-    val unit: ProductUnit,
+    val unit: ProductUnitDTO,
     @Serializable(with = UUIDSerializer::class)
     val merchantId: UUID,
     @Serializable(with = BigDecimalSerializer::class)

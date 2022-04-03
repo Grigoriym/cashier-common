@@ -19,4 +19,3 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "cashier-common-data"
-include(":cashier-common-domain")

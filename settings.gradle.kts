@@ -18,6 +18,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "cashier-common"
-include(":common_domain")
-
+rootProject.name = "cashier-common-data"
+include(":cashier-common-domain")

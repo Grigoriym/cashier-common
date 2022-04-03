@@ -9,7 +9,7 @@ plugins {
     application
 }
 
-group = "com.grappim.cashier_common"
+group = "com.grappim"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -33,7 +33,7 @@ fun kotlinStdlib() = kotlin("-stdlib-jdk8")
 dependencies {
     implementation(kotlinSerialization())
     implementation(kotlinStdlib())
-    implementation(project(":common_domain"))
+    implementation(project(":cashier-common-domain"))
     testImplementation(kotlin("test"))
 }
 

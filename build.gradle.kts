@@ -1,6 +1,6 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-val kotlin = "1.6.10"
+val kotlin = "1.8.22"
 val kotlinSerialization = "1.3.2"
 
 plugins {
@@ -41,5 +41,5 @@ tasks.test {
 }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "11"
+    kotlinOptions.jvmTarget = "13"
 }
